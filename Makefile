@@ -13,3 +13,7 @@ lint:
 test-coverage:
 	npm test -- --coverage
 
+test:
+	npm test
+
+.PHONY: test
