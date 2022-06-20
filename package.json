@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "[![Actions Status](https://github.com/OnishchenkoIvan/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/OnishchenkoIvan/frontend-project-lvl2/actions)",
-  "main": "index.js",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "main": "src/index.js",
   "scripts": {
-    "test": "npx jest --bail"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
@@ -19,12 +22,17 @@
   "homepage": "https://github.com/OnishchenkoIvan/frontend-project-lvl2#readme",
   "dependencies": {
     "commander": "^9.3.0",
-    "lodash": "^4.17.21"
-  },
-  "bin": {
-    "gendiff": "bin/gendiff.js"
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "npm": "^8.12.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@jest/globals": "^28.1.1",
+    "@types/jest": "^28.1.2",
+    "@types/mocha": "^9.1.1",
+    "babel-jest": "^28.1.1",
     "eslint": "^8.17.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
