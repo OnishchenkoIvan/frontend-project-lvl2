@@ -7,3 +7,6 @@
 
 JSON files:
 [![asciicast](https://asciinema.org/a/dNSAE4U8jiKjM2vJcCPIirfKW.svg)](https://asciinema.org/a/dNSAE4U8jiKjM2vJcCPIirfKW)
+
+YAML files:
+[![asciicast](https://asciinema.org/a/GpfbbNPNhO1OtfkyM7jcf4v8k.svg)](https://asciinema.org/a/GpfbbNPNhO1OtfkyM7jcf4v8k)

@@ -1,12 +1,12 @@
 import _ from 'lodash';
-import path from 'path';
-import { readFileSync } from 'fs';
+// import { readFileSync } from 'fs';
+import { getFixturePath, typeFile } from './parsers.js';
 
 const genDiff = (file1, file2) => {
-  const filePath1 = path.resolve('frontend-project-lvl2', '../__fixtures__', file1);
-  const filePath2 = path.resolve('frontend-project-lvl2', '../__fixtures__', file2);
-  const pars1 = JSON.parse(readFileSync(filePath1));
-  const pars2 = JSON.parse(readFileSync(filePath2));
+  const filePath1 = getFixturePath(file1);
+  const filePath2 = getFixturePath(file2);
+  const pars1 = typeFile(filePath1);
+  const pars2 = typeFile(filePath2);
   let arr = [];
   arr.push(Object.keys(pars1));
   arr.push(Object.keys(pars2));
