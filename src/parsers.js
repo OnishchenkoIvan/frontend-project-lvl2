@@ -18,6 +18,3 @@ const typeFile = (filename) => {
   return 'Wronf file type';
 };
 export { getFixturePath, readFile, typeFile };
-
-// const pars1 = JSON.parse(readFileSync(filePath1));
-// const pars2 = JSON.parse(readFileSync(filePath2));

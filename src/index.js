@@ -1,5 +1,4 @@
 import _ from 'lodash';
-// import { readFileSync } from 'fs';
 import { getFixturePath, typeFile } from './parsers.js';
 
 const genDiff = (file1, file2) => {
